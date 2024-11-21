@@ -7,8 +7,6 @@
   "mixins": [
     "DungeonContextMixin",
     "LocateSmallNetherDungeonCommandMixin",
-    "NoBasaltColumnsInStructuresMixin",
-    "NoDeltasInStructuresMixin",
     "accessor.BoundingBoxAccessor"
   ],
   "injectors": {
