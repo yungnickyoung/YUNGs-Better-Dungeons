@@ -33,9 +33,9 @@ public class SmallDungeonCeilingProcessor extends StructureProcessor {
                                                              StructurePlaceSettings structurePlacementData) {
         if (blockInfoGlobal.state().getBlock() == Blocks.ORANGE_STAINED_GLASS) {
             if (levelReader.getFluidState(blockInfoGlobal.pos()).is(FluidTags.WATER) || levelReader.getFluidState(blockInfoGlobal.pos()).is(FluidTags.LAVA)) {
-                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.COBBLESTONE.defaultBlockState(), blockInfoGlobal.nbt());
+                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.COBBLESTONE.defaultBlockState(), null);
             } else {
-                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), levelReader.getBlockState(blockInfoGlobal.pos()), blockInfoGlobal.nbt());
+                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), levelReader.getBlockState(blockInfoGlobal.pos()), null);
             }
         }
         return blockInfoGlobal;

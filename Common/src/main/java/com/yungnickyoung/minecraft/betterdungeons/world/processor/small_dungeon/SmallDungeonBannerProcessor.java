@@ -104,12 +104,12 @@ public class SmallDungeonBannerProcessor extends StructureProcessor {
 
                 // Check dungeon context to see if we have reached the max banner count for this structure piece
                 if (context.getBannerCount() >= BetterDungeonsCommon.CONFIG.smallDungeons.bannerMaxCount)
-                    return new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.CAVE_AIR.defaultBlockState(), blockInfoGlobal.nbt());
+                    return new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.CAVE_AIR.defaultBlockState(), null);
 
                 // Chance of a banner spawning
                 RandomSource random = structurePlacementData.getRandom(blockInfoGlobal.pos());
                 if (random.nextFloat() > .1f) {
-                    return new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.CAVE_AIR.defaultBlockState(), blockInfoGlobal.nbt());
+                    return new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.CAVE_AIR.defaultBlockState(), null);
                 }
 
                 Banner banner = getBannerForType();

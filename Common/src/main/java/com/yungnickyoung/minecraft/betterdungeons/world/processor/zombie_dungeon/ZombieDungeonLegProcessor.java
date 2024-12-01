@@ -52,7 +52,7 @@ public class ZombieDungeonLegProcessor extends StructureProcessor implements ISa
             // Always replace the glass itself with smooth stone
             Optional<BlockState> blockState = getBlockStateSafe(levelReader, blockInfoGlobal.pos());
             if (blockState.isEmpty() || blockState.get().isAir() || blockState.get().liquid()) {
-                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.SMOOTH_STONE.defaultBlockState(), blockInfoGlobal.nbt());
+                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.SMOOTH_STONE.defaultBlockState(), null);
             } else {
                 blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), blockState.get(), blockInfoGlobal.nbt());
             }
@@ -71,7 +71,7 @@ public class ZombieDungeonLegProcessor extends StructureProcessor implements ISa
         } else if (blockInfoGlobal.state().getBlock() == Blocks.PURPUR_SLAB) {
             Optional<BlockState> blockState = getBlockStateSafe(levelReader, blockInfoGlobal.pos());
             if (blockState.isEmpty() || blockState.get().isAir() || blockState.get().liquid()) {
-                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.SMOOTH_STONE_SLAB.defaultBlockState(), blockInfoGlobal.nbt());
+                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.SMOOTH_STONE_SLAB.defaultBlockState(), null);
             } else {
                 blockInfoGlobal = null;
             }

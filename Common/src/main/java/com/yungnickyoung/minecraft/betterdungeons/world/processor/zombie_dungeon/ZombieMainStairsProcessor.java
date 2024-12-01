@@ -69,7 +69,7 @@ public class ZombieMainStairsProcessor extends StructureProcessor implements ISa
 
             // Don't spawn staircase if we won't penetrate the surface
             if (surfaceHeight >= maxSurfacePos.getY() || surfaceHeight <= blockInfoGlobal.pos().getY()) {
-                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.CAVE_AIR.defaultBlockState(), blockInfoGlobal.nbt());
+                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.CAVE_AIR.defaultBlockState(), null);
                 return blockInfoGlobal;
             }
 

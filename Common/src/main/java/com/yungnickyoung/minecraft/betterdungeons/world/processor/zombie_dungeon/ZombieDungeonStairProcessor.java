@@ -43,7 +43,7 @@ public class ZombieDungeonStairProcessor extends StructureProcessor {
         if (blockInfoGlobal.state().getBlock() == Blocks.COBBLESTONE_STAIRS) {
             if (levelReader.getBlockState(blockInfoGlobal.pos()).isAir()) {
                 // Don't replace air to maintain rotted look
-                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.CAVE_AIR.defaultBlockState(), blockInfoGlobal.nbt());
+                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.CAVE_AIR.defaultBlockState(), null);
             } else {
                 BlockState newBlock = SELECTOR.get(structurePlacementData.getRandom(blockInfoGlobal.pos()));
                 if (newBlock.getBlock() instanceof StairBlock) {
@@ -52,7 +52,7 @@ public class ZombieDungeonStairProcessor extends StructureProcessor {
                         .setValue(StairBlock.HALF, blockInfoGlobal.state().getValue(StairBlock.HALF))
                         .setValue(StairBlock.SHAPE, blockInfoGlobal.state().getValue(StairBlock.SHAPE));
                 }
-                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), newBlock, blockInfoGlobal.nbt());
+                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), newBlock, null);
             }
         }
         return blockInfoGlobal;

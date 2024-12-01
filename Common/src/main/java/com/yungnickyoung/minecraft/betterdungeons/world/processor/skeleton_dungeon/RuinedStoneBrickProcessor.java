@@ -43,13 +43,13 @@ public class RuinedStoneBrickProcessor extends StructureProcessor {
                                                              StructurePlaceSettings structurePlacementData) {
         if (blockInfoGlobal.state().getBlock() == Blocks.YELLOW_STAINED_GLASS) {
             if (levelReader.getBlockState(blockInfoGlobal.pos()).isAir()) {
-                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.CAVE_AIR.defaultBlockState(), blockInfoGlobal.nbt());
+                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.CAVE_AIR.defaultBlockState(), null);
             } else {
-                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), STONE_BRICK_SELECTOR.get(structurePlacementData.getRandom(blockInfoGlobal.pos())), blockInfoGlobal.nbt());
+                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), STONE_BRICK_SELECTOR.get(structurePlacementData.getRandom(blockInfoGlobal.pos())), null);
             }
         } else if (blockInfoGlobal.state().getBlock() == Blocks.PRISMARINE_BRICK_SLAB) {
             if (levelReader.getBlockState(blockInfoGlobal.pos()).isAir()) {
-                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.CAVE_AIR.defaultBlockState(), blockInfoGlobal.nbt());
+                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.CAVE_AIR.defaultBlockState(), null);
             } else {
                 blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), STONE_BRICK_SLAB_SELECTOR.get(structurePlacementData.getRandom(blockInfoGlobal.pos())), blockInfoGlobal.nbt());
             }

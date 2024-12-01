@@ -30,11 +30,11 @@ public class NetherBlockProcessor extends StructureProcessor {
                                                              StructurePlaceSettings structurePlacementData) {
         if (!BetterDungeonsCommon.CONFIG.general.enableNetherBlocks) {
             if (blockInfoGlobal.state().is(Blocks.SOUL_SAND) || blockInfoGlobal.state().is(Blocks.SOUL_SOIL)) {
-                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.COARSE_DIRT.defaultBlockState(), blockInfoGlobal.nbt());
+                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.COARSE_DIRT.defaultBlockState(), null);
             } else if (blockInfoGlobal.state().is(Blocks.SOUL_CAMPFIRE)) {
-                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.CAMPFIRE.defaultBlockState(), blockInfoGlobal.nbt());
+                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.CAMPFIRE.defaultBlockState(), null);
             } else if (blockInfoGlobal.state().is(Blocks.SOUL_LANTERN)) {
-                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.LANTERN.defaultBlockState().setValue(LanternBlock.HANGING, blockInfoGlobal.state().getValue(LanternBlock.HANGING)), blockInfoGlobal.nbt());
+                blockInfoGlobal = new StructureTemplate.StructureBlockInfo(blockInfoGlobal.pos(), Blocks.LANTERN.defaultBlockState().setValue(LanternBlock.HANGING, blockInfoGlobal.state().getValue(LanternBlock.HANGING)), null);
             }
         }
         return blockInfoGlobal;
