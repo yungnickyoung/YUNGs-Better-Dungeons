@@ -1,0 +1,51 @@
+{
+  "Small Nether Dungeons are currently disabled by default. You can enable them in the mod's config.": "Pequenos Calabouços do Nether estão desativados por padrão. Você pode ativá-los nas configurações do mod.",
+
+  "betterdungeons.small_dungeon.banner.zombie": "Estandarte Fétido",
+  "Foul Banner": "Estandarte Fétido",
+  "betterdungeons.small_dungeon.banner.skeleton": "Estandarte Vingativo",
+  "Vengeful Banner": "Estandarte Vingativo",
+  "betterdungeons.small_dungeon.banner.spider": "Estandarte Assombrado",
+  "Haunted Banner": "Estandarte Assombrado",
+
+  "Banner of Decay": "Estandarte da Decadência",
+  "Banner of Pork": "Estandarte do Porco",
+  "Banner of Rage": "Estandarte da Fúria",
+
+  "betterdungeons.advancements.root.title": "YUNG's Melhores Calabouços",
+  "YUNG's Better Dungeons": "YUNG's Melhores Calabouços",
+  "betterdungeons.advancements.root.description": "A aventura te espera...",
+  "Adventure awaits...": "A aventura te espera...",
+
+  "betterdungeons.advancements.all_dungeons.title": "Explorador de Calabouços Profissional",
+  "Professional Dungeoneer": "Explorador de Calabouços Profissional",
+  "betterdungeons.advancements.all_dungeons.description": "Explore todos os Melhores Calabouços!",
+  "Explore all of the Better Dungeons!": "Explore todos os Melhores Calabouços!",
+
+  "betterdungeons.advancements.small_dungeon.title": "Grande Reforma",
+  "Quite the Renovation": "Grande Reforma",
+  "betterdungeons.advancements.small_dungeon.description": "Encontre uma Sala de Monstros melhorada",
+  "Find an upgraded Monster Room": "Encontre uma Sala de Monstros melhorada",
+
+  "betterdungeons.advancements.skeleton_dungeon.title": "Pendência Óssea",
+  "A Bone to Pick": "Pendência Óssea",
+  "betterdungeons.advancements.skeleton_dungeon.description": "Entre em uma Fortaleza dos Mortos-Vivos",
+  "Enter a Fortress of the Undead": "Entre em uma Fortaleza dos Mortos-Vivos",
+
+  "betterdungeons.advancements.spider_dungeon.title": "Enredado em Teias",
+  "Cobweb Entanglement": "Enredado em Teias",
+  "betterdungeons.advancements.spider_dungeon.description": "Descubra uma Caverna de Aranhas",
+  "Discover a Spider Cave": "Descubra uma Caverna de Aranhas",
+
+  "betterdungeons.advancements.zombie_dungeon.title": "Quando em Roma",
+  "When in Rome": "Quando em Roma",
+  "betterdungeons.advancements.zombie_dungeon.description": "Ponha os pés em uma Catacumba",
+  "Set foot in a Catacomb": "Ponha os pés em uma Catacumba",
+
+  "A Special Addition": "Uma Adição Especial",
+  "Find a Small Nether Dungeon": "Encontre um Pequeno Calabouço do Nether",
+
+  "text.autoconfig.betterdungeons-fabric-1_21.title": "YUNG's Melhores Calabouços",
+
+  "text.autoconfig.betterdungeons-fabric-1_21.option.betterDungeons": "YUNG's Melhores Calabouços"
+}
